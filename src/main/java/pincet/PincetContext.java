@@ -23,9 +23,10 @@ public class PincetContext {
     this.config = new PincetConfig(args);
   }
 
-  void init(String pkg){
+  void init(String pkg) {
 
   }
+
   public PincetConfig config() {
     return this.config.get();
   }
@@ -62,7 +63,8 @@ public class PincetContext {
     log.info("Pincet running at {}", pid);
     config.pid(pid);
   }
-  public long pid(){
+
+  public long pid() {
     return config().pid();
   }
 }

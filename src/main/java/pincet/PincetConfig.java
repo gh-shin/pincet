@@ -27,7 +27,7 @@ public final class PincetConfig implements Serializable, Cloneable {
 
   PincetConfig(List<PincetArgs> args) throws InitializeException {
     this.APP_ID = args.stream().filter(arg -> arg.equals(PincetArgs.ID))
-        .findFirst().orElseGet(()->{
+        .findFirst().orElseGet(() -> {
           PincetArgs id = PincetArgs.ID;
           id.setValue(UUID.randomUUID().toString());
           return id;

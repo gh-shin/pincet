@@ -93,7 +93,7 @@ public class Pincet implements Closeable {
   }
 
   public static void registGcDataHandler(VmDataHandler handler) {
-    if(isGcHandlerRegistered()){
+    if (isGcHandlerRegistered()) {
       logger().warn("GcHandler already registered. new handler will be override.");
     }
     o.gcDataHandler = handler;

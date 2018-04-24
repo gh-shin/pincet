@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2016. Epozen co. Author Steve Shin.
- */
-
 package pincet.util;
 
 import com.google.common.cache.Cache;
