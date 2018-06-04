@@ -4,6 +4,8 @@
 
 package pincet.util.lang;
 
+import pincet.util.UT;
+
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Objects;
@@ -23,12 +25,12 @@ public class NumericUtil {
 
   @Deprecated
   public static Integer parseIntSafely(final String str) {
-    return Integer.parseInt(StringUtil.isNull(str) ? "0" : str);
+    return Integer.parseInt(UT.string.checkNull(str) ? "0" : str);
   }
 
   @Deprecated
   public static long parseLongSafely(final String str) {
-    return Long.parseLong(StringUtil.isNull(str) ? "0" : str);
+    return Long.parseLong(UT.string.checkNull(str) ? "0" : str);
   }
 
   @Deprecated
