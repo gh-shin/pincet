@@ -4,7 +4,6 @@
 
 package pincet.annotation;
 
-import com.jws.framework.components.SingletonProxyFactory;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -17,7 +16,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * <p>
  * ArcContainer 클래스에 등록 될 클래스에 삽입
  * name에 정의된 이름을 Key로 하여 ArcComponentContainer 내에 등록 되어 관리된다.
- * @see SingletonProxyFactory
+ * @see pincet.component.ComponentFactory
  */
 @Target(TYPE)
 @Retention(RUNTIME)
